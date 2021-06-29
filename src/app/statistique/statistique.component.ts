@@ -22,6 +22,10 @@ export class StatistiqueComponent implements OnInit, OnDestroy {
         console.log('item destroy');
     }
 
+    borderColor(): string {
+        return this.statistiqueCom.appreciation === 'ERROR' ? 'border: dashed red;' : 'border: dashed green;';
+    }
+
     delete(): void {
         console.log(this.statistiqueCom.identifiant);
         fetch('https://stats.naminilamy.fr/' + this.statistiqueCom.identifiant,
