@@ -9,12 +9,7 @@ import {Statistique} from '../models/statistique';
 export class StatistiqueComponent implements OnInit {
 
     @Input()
-    public statistique!: Statistique;
-
-    identifiant = 'test';
-    titre = 'test';
-    valeur = 'test';
-    appreciation = 'test';
+    public statistiqueCom!: Statistique;
 
     constructor() {
     }

@@ -3,3 +3,5 @@
 
 <app-statistique></app-statistique>
 <app-statistique></app-statistique>
+
+<app-statistique *ngFor="let stat of listStatistiques" [statistiqueCom]="stat"></app-statistique>
